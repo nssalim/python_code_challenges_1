@@ -77,3 +77,33 @@ print(movie_review(3))
 print(movie_review(7))
 # should print "Excellent!"
 
+# 5. MAX NUMBER
+# Select which number from three input values is the greatest using conditional statements. Check the different combinations of values to see which number is greater than the other two. 
+
+# Define a function that has three input parameters, num1, num2, and num3
+# Test if num1 is greater than the other two numbers
+# If so, return num1
+# Test if num2 is greater than the other two numbers
+# If so, return num2
+# Test if num3 is greater than the other two numbers
+# If so, return num3
+# If there was a tie between the two largest numbers, then return "It's a tie!"
+
+def max_num(num1, num2, num3):
+  if num1 > num2 and num1 > num3:
+    return num1
+  elif num2 > num1 and num2 > num3:
+    return num2
+  elif num3 > num1 and num3 > num2:
+    return num3
+  else:
+    return "It's a tie!"
+# test max_num function:
+print(max_num(-10, 0, 20))
+# should print 20
+print(max_num(-10, 1, -20))
+# should print 1
+print(max_num(-1, -10, -10))
+# should print -1
+print(max_num(1, 10, 10))
+# should print "It's a tie!"
