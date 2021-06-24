@@ -73,3 +73,20 @@ print(more_than_n([7, 4, 6, 7, 3, 7, 1, 7], 7, 3))
 # should print True
 # item 7 appears more than 3 times in my_list
 # The more_than_n function returns True as item appears in the list more than n times.
+
+
+# 5. COMBINE SORT
+# To combine two different lists together and then sort them. Combine the lists with an operation and then sort using a function call. 
+
+# Define the function to accept two parameters, one for each list.
+# Combine the two lists together
+# Sort the result
+# Return the sorted and combined list
+
+def combine_sort(my_list1, my_list2):
+  unsorted = my_list1 + my_list2
+  sortedList = sorted(unsorted)
+  return sortedList
+# test combine_sort function:
+print(combine_sort([9, 7, 6, 21], [-10, 27, 48, 75]))
+# should print [-10, 6, 7, 9, 21, 27, 48, 75]
