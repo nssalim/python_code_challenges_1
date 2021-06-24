@@ -37,3 +37,24 @@ print(over_budget(100, 20, 30, 10, 30))
 # should print False
 print(over_budget(200, 50, 80, 40, 50))
 # should print True
+
+# 3. TWICE AS LARGE
+# To determine if one number is twice as large as another number. Compare the first number with two times the second number. 
+
+# Define function with two inputs num1 and num2
+# Multiply the second input by 2
+# Use an if statement to compare the result of the last calculation with the first input
+# If num1 is greater then return True otherwise return False
+
+def twice_as_large(num1, num2):
+  if num1 > 2 * num2:
+    return True
+  else:
+    return False
+# test twice_as_large function:
+print(twice_as_large(4, 2))
+# should print False
+print(twice_as_large(5, 2))
+# should print True
+
+
