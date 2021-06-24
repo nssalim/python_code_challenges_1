@@ -34,3 +34,23 @@ print(same_name("Sapphire", "Sapphire"))
 # should print True
 print(same_name("Sapphire", "Steel"))
 # should print False
+
+# 3. ALWAYS FALSE (Avoid creating conditions like this)
+# An if statement that is always false is called a contradiction. A contradiction occurs when the condition will always be false no matter what value is passed into it.
+
+# Define the function to accept a single parameter called num
+# Use a combination of <, > and and to create a contradiction in an if statement.
+# If the condition is true, return True, otherwise return False. 
+
+def always_false(num):
+  if (num > 0 and num < 0):
+    return True
+  else:
+    return False
+# test  always_false function:
+print(always_false(0))
+# should print False
+print(always_false(-1))
+# should print False
+print(always_false(1))
+# should print False
