@@ -113,3 +113,5 @@ print(middle_element([9, 7, 6, 21, 48, 75, 23]))
 # Use modulus to determine if the list has an even or odd number of elements. For an odd number of elements, calculate the middle index and return the middle element from the list. For an even number of elements, calculate the index of the element close to the middle and the other element close to the middle (by subtracting 1 from the middle calculation). From the values at those indices, calculate the average.
 
 # Note that the math to find the middle index can be tricky. In some cases, when dividing by 2, can get a double. For example, if list had 3 items in it, then 3/2 would give 1.5. The middle index should be 1, so in order to go from 1.5 to 1, cast 1.5 as an int. In total, this is int(len(my_list)/2).
+
+# *** To re-visit middle_element function at later date ***
