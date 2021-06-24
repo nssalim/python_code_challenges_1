@@ -54,3 +54,22 @@ def larger_list(my_list1, my_list2):
 print(larger_list([9, 7, 6, 21], [-10, 27, 48, 75]))
 # should print 21
 # The larger_list function returns the last element of the list that contains more elements. As both lists are the same size, it returns the last element of my_list1.
+
+
+# 4. MORE THAN N
+# To check the number of instances of a certain type of flavored snack. The conveyor belt is full of different types of snacks represented by different numbers. Accept a list of numbers (representing the type of snack), a number for the second parameter (the type of snack we are looking for), and another number as the third parameter (the maximum number of that type of snack on the conveyor belt). The function will return True if the snack being searched for appears more times than was provided as the third parameter.
+
+# Define the function to accept three parameters, a list of numbers, a number to look for, and a number for the number of instances
+# Count the number of occurrences of item (the second parameter) in my_list (the first parameter)
+# If the number of occurrences is greater than n (the third parameter), return True. Otherwise, return False
+
+def more_than_n(my_list, item, n):
+  if my_list.count(item) > n:
+    return True
+  else:
+    return False
+# test more_than_n function:
+print(more_than_n([7, 4, 6, 7, 3, 7, 1, 7], 7, 3))
+# should print True
+# item 7 appears more than 3 times in my_list
+# The more_than_n function returns True as item appears in the list more than n times.
