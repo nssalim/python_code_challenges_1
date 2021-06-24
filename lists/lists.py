@@ -37,3 +37,20 @@ print(append_sum([9, 7, 6, 21]))
 
 # As my_list started as [9, 7, 6, 21], the final result should be [9, 7, 6, 21, 27, 48, 75].
 
+
+# 3. LARGER LIST
+# To work with two conveyor belts that contain items represented by a numerical ID. If one conveyor belt contains more items than the other, then return the ID of the last item on that belt. In the case where they have the same number of items, return the last item from the first conveyor belt.
+
+# Define the function to accept two parameters for the two lists of numbers
+# Check if the length of the first list is greater than or equal to the length of the second list
+# If true, then return the last element from the first list. Otherwise, return the last element from the second list.
+
+def larger_list(my_list1, my_list2):
+  if len(my_list1) >= len(my_list2):
+    return my_list1[-1]
+  else:
+    return my_list2[-1]
+# test larger_list function
+print(larger_list([9, 7, 6, 21], [-10, 27, 48, 75]))
+# should print 21
+# The larger_list function returns the last element of the list that contains more elements. As both lists are the same size, it returns the last element of my_list1.
