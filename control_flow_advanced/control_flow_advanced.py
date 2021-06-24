@@ -54,3 +54,26 @@ print(always_false(-1))
 # should print False
 print(always_false(1))
 # should print False
+
+# 4. MOVIE REVIEW
+# Function that will help rate movies. The function will split the ratings into different ranges and tell the user how the movie was based on the movie’s rating.
+
+# Define function to accept a single number called rating
+# If the rating is equal to or less than 5, return "Avoid!"
+# If the rating was less than 9, return "Excellent!"
+# If neither of the if statement conditions were met, return "Don't Miss!"
+
+def movie_review(rating):
+  if(rating <= 5):
+    return "Avoid!"
+  if(rating < 9):
+    return "Excellent!"
+  return "Don't miss!!"
+# test movie_review function:
+print(movie_review(10))
+# should print "Don't miss!"
+print(movie_review(3))
+# should print "Avoid!"
+print(movie_review(7))
+# should print "Excellent!"
+
