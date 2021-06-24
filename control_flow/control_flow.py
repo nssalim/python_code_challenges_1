@@ -1,7 +1,7 @@
 # Python Code Challenges: Control Flow
 
 # 1. LARGE POWER
-# method  tests whether the result of taking the power of one number to another number provides an answer which is greater than 3000. Use a conditional statement to return True if the result is greater than 3000 or return False if it is not. 
+# Method  tests whether the result of taking the power of one number to another number provides an answer which is greater than 3000. Use a conditional statement to return True if the result is greater than 3000 or return False if it is not. 
 
 # Define the function to accept two input parameters called base and exponent
 # Calculate the result of base to the power of exponent
@@ -18,3 +18,22 @@ print(large_power(10, 4))
 print(large_power(10, 3))
 # should print False
 
+
+# 2. OVER BUDGET
+# To watch budget in order to save money. Ensure the result of  spending is less than the total amount allocated for each of the categories. The function will accept a parameter called budget which describes spending limit. The next four parameters describe what the money is spent on. Sum all of the spendings and compare it to the budget. If over budget, return True. Otherwise return False. 
+
+# Define the function to accept five parameters starting with budget then food_bill, electricity_bill, internet_bill, and rent
+# Calculate the sum of the last four parameters
+# Use if and else statements to test if the budget is less than the sum of the calculated sum from the previous step.
+# If the condition is true, return True otherwise return False
+
+def over_budget(budget, food_bill, electricity_bill, internet_bill, rent):
+  if (budget < food_bill + electricity_bill + internet_bill + rent):
+    return True
+  else:
+    return False
+# test over_budget function:
+print(over_budget(100, 20, 30, 10, 30))
+# should print False
+print(over_budget(200, 50, 80, 40, 50))
+# should print True
