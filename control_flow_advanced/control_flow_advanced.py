@@ -16,3 +16,21 @@ print(in_range(10, 9, 11))
 # should print True
 print(in_range(9, 10, 11))
 # should print False
+
+# 2. SAME NAME
+# To check different names and determine if they are equal. Accept two strings and compare them.
+
+# Define the function to accept two strings, your_name and my_name
+# Test if the two strings are equal
+# Return True if they are equal, otherwise return False
+
+def same_name(your_name, my_name):
+  if (your_name == my_name):
+    return True
+  else:
+    return False
+# test same_name function:
+print(same_name("Sapphire", "Sapphire"))
+# should print True
+print(same_name("Sapphire", "Steel"))
+# should print False
