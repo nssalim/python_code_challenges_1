@@ -54,3 +54,38 @@ def more_frequent_item(my_list, item1, item2):
 print(more_frequent_item([7, 6, 6, 7, 6, 7, 6, 7, 6], 7, 6))
 # should print 6
 
+# 4. DOUBLE INDEX
+# TO double a value at a given position. Provide a list and an index to double. This will create a new list by replacing the value at the index provided with double the original value. If the index is invalid return the original list.
+
+# Define the function to accept two parameters, one for the list and another for the index of the value being doubled
+# Test if the index is invalid. If its invalid then return the original list
+# If the list is valid then get all values up to the index and store it as a new list
+# Append the value at the index times 2 to the new list
+# Add the rest of the list from the index onto the new list
+# Return the new list
+
+def double_index(my_list, index):
+  # Check if index is too big
+  if index >= len(my_list):
+    return my_list
+  else:
+    # Gets the original list up to index
+    new_my_list = my_list[0:index]
+ # Adds double the value at index to the new list 
+  new_my_list.append(my_list[index]*2)
+  #  Adds the rest of the original list
+  new_my_list = new_my_list + my_list[index+1:]
+  return new_my_list
+# check double_index function:
+print(double_index([9, 7, 6, 21], 2))
+# should print [9, 7, 12, 21]
+# element at index 2 has been doubled
+
+print(double_index([9, 7, 6, 21], 1))
+# should print [9, 14, 6, 21]
+# element at index 1 has been doubled
+
+# solution does not modify the original input list
+
+
+
