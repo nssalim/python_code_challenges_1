@@ -88,4 +88,28 @@ print(double_index([9, 7, 6, 21], 1))
 # solution does not modify the original input list
 
 
+# 5. MIDDLE ITEM
+# Find the middle item from a list of values. This will be different depending on whether there are an odd or even number of values. In the case of an odd number of elements, function will return the exact middle value. If there is an even number of elements, it will return the average of the middle two elements. 
 
+# Define the function to accept one parameter for our list of numbers
+# Determine if the length of the list is even or odd
+# If the length is even, then return the average of the middle two numbers
+# If the length is odd, then return the middle number
+
+def middle_element(my_list):
+  if len(my_list) % 2 == 0:
+    sum = my_list[int(len(my_list)/2)] + my_list[int(len(my_list)/2) - 1]
+    return sum / 2
+  else:
+    return my_list[int(len(my_list)/2)]
+
+# check middle_element function:
+print(middle_element([9, 7, 6, 21, 48, 75]))
+# should print 13.5
+
+print(middle_element([9, 7, 6, 21, 48, 75, 23]))
+# should print 21
+
+# Use modulus to determine if the list has an even or odd number of elements. For an odd number of elements, calculate the middle index and return the middle element from the list. For an even number of elements, calculate the index of the element close to the middle and the other element close to the middle (by subtracting 1 from the middle calculation). From the values at those indices, calculate the average.
+
+# Note that the math to find the middle index can be tricky. In some cases, when dividing by 2, can get a double. For example, if list had 3 items in it, then 3/2 would give 1.5. The middle index should be 1, so in order to go from 1.5 to 1, cast 1.5 as an int. In total, this is int(len(my_list)/2).
