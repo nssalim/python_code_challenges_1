@@ -57,4 +57,22 @@ print(twice_as_large(4, 2))
 print(twice_as_large(5, 2))
 # should print True
 
+# 4. DIVISIBLE BY TEN
+# To determine whether or not a number is divisible by ten. A number is divisible by ten if the remainder of the number divided by 10 is 0.
+
+# Define the function header to accept one input num
+# Calculate the remainder of the input divided by 10 (use modulus)
+# Use an if statement to check if the remainder was 0. If the remainder was 0, return True, otherwise, return False
+
+def divisible_by_ten(num):
+  if (num % 10 == 0):
+    return True
+  else:
+    return False
+# test  divisible_by_ten() function:
+print(divisible_by_ten(50))
+# should print True
+print(divisible_by_ten(47))
+# should print False
+
 
