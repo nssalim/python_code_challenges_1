@@ -33,3 +33,24 @@ print(remove_middle([9, 7, 6, 21, 48, 75, 23], 1, 3))
 print(remove_middle([9, 7, 6, 21, 48, 75, 23], 1, 2))
 # should print [9, 21, 48, 75, 23]
 
+# *** To re-visit remove_middle function at later date ***
+
+
+# 3. MORE FREQUENT ITEM
+# Conveyor belt has items where each item is represented by a different number. Out of two items, find which one shows up more on belt. Use a function with three parameters. One parameter for the list of items, another for the first item being compared, and another for the second item.
+
+# Define the function to accept three parameters: the list, the first item, and the second item
+# Count the number of times item1 shows up in the list
+# Count the number of times item2 shows up in the list
+# If item1 shows up more, return item1. Otherwise, return item2
+# If the two items appear the same number of times, return item1.
+
+def more_frequent_item(my_list, item1, item2):
+  if my_list.count(item1) >= my_list.count(item2):
+    return item1
+  else:
+    return item2
+# check more_frequent_item function
+print(more_frequent_item([7, 6, 6, 7, 6, 7, 6, 7, 6], 7, 6))
+# should print 6
+
